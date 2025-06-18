@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <style>
+            body{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+header{
+    height: 200px;
+    background-color: rgb(15, 21, 28);
+    border-radius: 25px;
+    text-align: center;
+    padding-top: 5px;
+    color: azure;
+    font-size: larger;
+    font-weight:bolder;
+}
+header h1{
+    word-spacing: 10px;
+    text-transform: initial;
+    letter-spacing: 2px;
+}
+nav a{
+    color:wheat ;
+    padding: 20px;
+    text-decoration: none;
+}
+header nav {
+    padding-top: 10px;
+}
+main{
+    background-color:antiquewhite;
+    height: 1000px;
+    font-size: large;
+}
+main h1{
+    padding-left: 20px;
+    padding-top: 20px;
+    text-transform:capitalize;
+}
+main p{
+    font-size: larger;
+    padding-left: 40px;
+    text-transform:capitalize;
+    word-spacing: 5px;
+}
+main ul{
+    list-style: none;
+}
+main li{
+    padding: 6px;
+}
+footer {
+    height: 50px;
+    background-color: rgb(15, 21, 28);
+    color: antiquewhite;
+    text-align: center;
+    font-size: larger;
+    text-transform: capitalize;
+    padding-top: 25px;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+main div img{
+    height: 400px;
+    width: 400px;
+        border-radius: 8px;
+}
+main div{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+        </style>
+
+    </head>
+
+    <body>
+        <header>
+            <h1> My Portfolio</h1>
+            <nav>
+                <a href="https://www.linkedin.com/in/vardhan-reddy-50b219291">My linkedin</a>
+                  <a id="aa" href="#Projects">Projects</a>
+                  <a id="cc"href= "#Contact">Contact</a>
+            </nav>
+            <script>
+                let a=document.getElementById("aa");
+                a.addEventListener("click",name);
+                let c=document.getElementById("cc");
+                c.addEventListener("click",name1);
+                function name() {
+                    alert("this will leads to projects");
+
+                }
+                function name1(){
+                    alert("this will leads to contact");
+                }
+            </script>
+        </header>
+        <main>
+            <h1>About me</h1>
+            <p>hello! i am a passionate web developer. i love creating modern, responsive websites and learning new 
+                technologies hello i am a passionate web developer. i love creating modern, responsive websites and learning new 
+                technologieshello i am a passionate web developer. i love creating modern, responsive websites and learning new 
+                technologies </p>
+
+                       <h1 id="Projects">Projects</h1>
+       <ul>
+        <li><strong>Project 1: </strong> A sample landing page</li>
+        <li><strong>Project 2:</strong> My Portfolio page </li>
+        <li><strong>Project 3:</strong> A simple fashion store </li>
+       </ul>
+       <div>
+        <img src="https://miro.medium.com/v2/resize:fit:1224/0*jllAjENdZ5yfSzGn">
+        <img src="https://i.ytimg.com/vi/Dtb3DdSvYRY/maxresdefault.jpg">
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQFceEmDlDLFhA/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1687908969665?e=2147483647&v=beta&t=7INvW8QI80Q6PQ0Z-ZseVKjvmBqMRXVQEJquST7ZB-g">
+        
+       </div>
+
+       <section>
+        <h1 id="Contact">Contact</h1>
+        <p>Email: vardhanreddy4455@gmail.com</p>
+       </section>
+        </main>
+       <footer>
+        &#169 vardhan reddy
+       </footer>
+       
+    </body>
+</html>
